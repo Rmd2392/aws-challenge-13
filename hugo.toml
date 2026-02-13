@@ -1,0 +1,17 @@
+baseURL = "https://aws13.cloudlab.cat/"
+languageCode = "es-es"
+title = "cloudlab.cat — Repte 13"
+theme = "blowfish"
+
+enableRobotsTXT = true
+
+[pagination]
+  pagerSize = 10
+
+
+[params]
+  colorScheme = "ocean"
+  defaultAppearance = "dark"
+  autoSwitchAppearance = true
+  enableSearch = true
+  showReadingTime = true
