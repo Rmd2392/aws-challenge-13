@@ -1,0 +1,29 @@
+customHeaders:
+  # HTML: TTL bajo (cambios rápidos)
+  - pattern: '**/*.html'
+    headers:
+      - key: Cache-Control
+        value: 'public, max-age=0, s-maxage=60, must-revalidate'
+
+  # CSS/JS: TTL alto (assets)
+  - pattern: '**/*.css'
+    headers:
+      - key: Cache-Control
+        value: 'public, max-age=31536000, immutable'
+
+  - pattern: '**/*.js'
+    headers:
+      - key: Cache-Control
+        value: 'public, max-age=31536000, immutable'
+
+  # Imágenes: TTL alto
+  - pattern: '**/*.{png,jpg,jpeg,svg,webp,gif,ico}'
+    headers:
+      - key: Cache-Control
+        value: 'public, max-age=31536000, immutable'
+
+  # Fuentes: TTL alto
+  - pattern: '**/*.{woff2,woff,ttf,otf}'
+    headers:
+      - key: Cache-Control
+        value: 'public, max-age=31536000, immutable'
