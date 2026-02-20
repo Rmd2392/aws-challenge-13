@@ -18,3 +18,4 @@ Este sitio forma parte del **Reto 13** y demuestra:
 - /docs/arquitectura/
 - /docs/cache/
 - /docs/tests/
+Cache test: 2026-02-20T13:00:58Z
